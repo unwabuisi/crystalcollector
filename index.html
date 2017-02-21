@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystal Collector Game</title>
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- CSS StyleSheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="jumbotron">
+					<h1>Crystals Collector</h1>
+
+					<p>You will be given a random number at the start of the game.</p>
+
+					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+					</p>
+
+					<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+
+					<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>	
+
+		<div class="row">
+				
+				
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Number</h3>
+					</div>
+					<div class="panel-body">
+						<span id="numberToGuess">0</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Your Total Score Is:</h3>
+					</div>
+					<div class="panel-body" id="score">
+						0
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<div class="panel panel-default">
+					<div class="panel-body" id="win-losses">
+						<p id="wins"></p>
+						<p id="losses"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="media">
+				<a class="pull-left crystal" href="#" id="crystal1">
+					<img class="media-object" src="assets/images/crystal.png" alt="Image">
+				</a>
+			</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="media">
+				<a class="pull-left crystal" href="#" id="crystal2">
+					<img class="media-object" src="assets/images/gem.png" alt="Image">
+				</a>
+
+			</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="media">
+				<a class="pull-left crystal" href="#" id="crystal3">
+					<img class="media-object" src="assets/images/gemstone.png" alt="Image">
+				</a>
+			</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="media">
+				<a class="pull-left crystal" href="#" id="crystal4">
+					<img class="media-object" src="assets/images/sapphire.png" alt="Image">
+				</a>
+			</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src=assets/javascript/game.js >
+	</script>
+
+</body>
+</html>`
